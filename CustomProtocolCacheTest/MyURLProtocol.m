@@ -46,7 +46,7 @@ static NSString *WingTextURLHeader = @"Wing-Cache";
         
         NSString *absoluteURLString = [self request].URL.absoluteString;
         //方式二：协议改成 http 或 https，测试有效，不缓存
-//        absoluteURLString = @"http://g.alicdn.com/sd/data_sufei/1.4.3/aplus/index.js";
+        absoluteURLString = @"http://g.alicdn.com/sd/data_sufei/1.4.3/aplus/index.js";
         
         //测试一：后加随机字符串，测试无效，缓存依然存在
 //        absoluteURLString = [NSString stringWithFormat:@"%@?%@", absoluteURLString, [NSString stringWithFormat:@"t=%i",arc4random()]];
